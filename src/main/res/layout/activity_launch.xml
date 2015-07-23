@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/launchimage">
+
+    <!--make sure the image sizes are less, else you lose out on memory space !-->
+      <LinearLayout
+          android:id="@+id/forLaunchButton"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+        <Button
+            android:id = "@+id/startButton"
+            android:text = "START"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:clickable="true"
+            android:onClick="onLaunchMainActivity"/>
+        </LinearLayout>
+
+</LinearLayout>
