@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.malabika.test1" >
+
+    <!-- uses permission to be added to access the fine location of the phone
+    android.permission.ACCESS_FINE_LOCATION !-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ActivityTheme" >
+
+        <activity
+            android:name=".LaunchActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name = "android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".MainActivity$myBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
+
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
+
