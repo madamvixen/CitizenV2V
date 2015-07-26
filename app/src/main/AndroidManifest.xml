@@ -32,6 +32,21 @@
             </intent-filter>
         </activity>
 
+        <!--<activity-->
+            <!--android:name=".Update"-->
+            <!--android:theme="@style/AppTheme">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--<receiver android:name=".Update$myBroadcastReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.ACTION_VIEW"/>-->
+
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
         <receiver android:name=".MainActivity$myBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_VIEW"/>
@@ -42,4 +57,3 @@
     </application>
 
 </manifest>
-
